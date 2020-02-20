@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>portfolio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1> UNIT 6 - Communication Through The Internet </h1>
+
+    <h2>6.2 - Internet: Basic Concepts and Terminology </h2>
+
+    <h3>1) What is bandwidth? What do you think affects the differences in bandwidth globally as well as in different locations in the U.S.?</h3>
+
+    <h4>Bandwidth is the amount of data being transferred, different locations can result in different bandwidths due to the amount necessary or needed.</h4>
+
+    <h3>2) What is latency? How does it differ from bandwidth? Why is it a useful measure?</h3>
+
+    <h4>Latency is the amount of time the data takes to transfer to the chosen location, it is useful to measure because you can track whether the data is being sent fast or not. </h4>
+
+    <h3>3) What is the digital divide? What are some ways to reduce the effects of the digital divide?</h3>
+
+    <h4>The digital divide is the number of people who are incapable of using the internet compared to the people who do have internet access due to socioeconomic, geographic. One way that we can reduce the effects of the digital divide is if we include more public spaces including libraries to be able to access the internet. </h4>
+
+    <h2>6.3 - Internet Architecture and Packet Switching </h2>
+
+    <h3>1) (POGIL Activity 1) How does the geographical distance between the source and destination hosts on a network affect latency?</h3>
+
+    <h4>The geographical distance between the source and the destination can affect the network’s latency because the farther the destination is the longer it would take for the data to arrive. </h4>
+
+    <h3>2) What are the benefits of packet switching? </h3>
+
+    <h4>The benefits of packet switching involve the data being cut into pieces that can avoid being stolen and they also arrive faster compared to if the packet was sent whole. </h4>
+
+    <h3>3) (POGIL Activity 2) Missing Packets. What should happen if a packet goes missing? Who (which layer) would handle this? What action would they have to take? And what additional information would be needed in the packet in order to handle it?</h3>
+
+    <h4>If a packet goes missing the internet layer is responsible for analyzing the data and passing it over to the next destination to check if that location was correct.</h4>
+
+    <h3>4) (POGIL Activity 2) Security/Privacy. As the packets are being transmitted through the network, can people other than the sender and receiver read the messages? What methods can we use to protect the message?</h3>
+
+    <h4>As packets transfer through the network other people are capable of observing the data, this can be protected using the public key cryptography.</h4>
+
+    <h2>6.4 - I.P. Addresses and Domain Names </h2>
+
+    <h3>1) What is DNS and how does it work? How does DNS help you connect to a web server like Amazon?</h3>
+
+    <h4>DNS is the domain name system that translates the domain name into the IP address. The DNS helps you connect with a web server like Amazon because it is easily searchable and every website has a unique IP address. </h4>
+
+    <h3>2) Include a screenshot of your message log in the DNS Simulation app in Activity 1.</h3>
+
+    <a href="https://ibb.co/0p7VrkF"><img src="https://i.ibb.co/fVgGHbn/Full-Size-Render.jpg" width= 500></a>
+
+    <h2>6.5 - Caeser Cipher App </h2>
+
+    <h3>1) Post a screenshot of your code for the caesarDecrypt function.</h3>
+
+    <a href="https://ibb.co/f4Fp7kL"><img src="https://i.ibb.co/Gcp2jWN/Screen-Shot-2020-02-19-at-8-36-43-PM.png" width= 700></a>
+
+    <h3>2) Explain the difference between a function and a procedure. Give an example of a function.</h3>
+
+    <h4>The difference between a function and procedure is that a function is a type of procedure that would result in a value while a procedure is a accumulation of all the codes condensed into one, and doesn’t necessarily result in a value. </h4>
+
+    <h3>3) Explain the difference between global and local variables. Why are local variables easier to debug than global variables?</h3>
+
+    <h4>The difference between a global and local variable is that the global variable can be used throughout the whole code while the local variable can only used within a single funcion.</h4>
+
+    <h2>6.6 - Cryptography Basics </h2>
+
+    <h3>1) Explain briefly how the following substitution ciphers can be broken: Caesar cipher, Simple substitution cipher, Vigenere cipher.</h3>
+
+    <h4>The Caesar cipher can be broken using brute force, the simple substitution can be used using the frequency analysis method, and the vigenere cipher can be broken depending on if the key used is a one time pass, if it is then the cipher is impossible to break, however if the key has been used before it is possible to be broken.</h4>
+
+    <h4>2) Define symmetric encryption.</h4>
+
+    <h3>symmetric encryption is when the same key is used for both the encryption and decryption</h3>
+
+    <h2>6.7 - Cryptography: Securing The Internet </h2>
+
+    <h3>1) Explain in your own words how public key encryption is not symmetric.</h3>
+
+    <h4>Public key is encryption is not symmetric because the encrypted message is sent to the reciepient with one key, the reciepient will then add their own key (lock) onto the encrypted message and send it back to the original owner. The original owner will then proceed to take off their lock and send the message to the reciever to finally read the message. As this whole process continues the key is never shared with one another, rather the same lock you would put on the message would only be able to be broken by you.</h4>
+
+    <h3>2) Cryptography relies on open standards - a protocol or standard that is publicly available. Why are open standards necessary?</h3>
+
+    <h4>Open Standards are necessary because the browsers need to be able to communicate with eachother, without open standards no one would have access to the internet. </h4>
+
+    <h2>6.8 - Debugging Caeser Cipher</h2>
+
+    <h3>1) For each of the 5 bugs in the Caesar Cipher app, explain what the bug was, how to fix it, and the type of error (semantic or syntax). If you wish, you can take a picture of your corrected blocks and then annotate it to identify and describe the bugs you fixed.</h3>
+
+    <h4>The first bug we noticed was apart of the caesarEncrypt function; the function would result in plaintext rather than the plaintext which was what the purpose of the function was. The second mistake we noticed was the loop block that originally had the value instead of length/get plaintext which was what we fixed it to. We did this because if we were to constantly start the value back at 5 the loop would not change at all. Third, the segment text needed to add a downcase beside the get plaintext so the chr's would be downcase and could be identified. Fourth, in the ceasarDecrypt function the chr needed to add an upcase to the segmenttext so the text can be identified. Finally, the last bug we found was apart of the caesarDecrypt function towards the end alike to the caesarEncrypt function where the result should've been ciphertext instead of plaintext however is vice versa this time. So the result would be to get plaintext instead of cipher text.  </h4>
+
+    <h2>6.9 - Impacts of CS: Cryptography and the Government</h2>
+
+    <h3>1) What does it mean to say that the government would like to have a back door to the encrypted data on a mobile phone?</h3>
+
+    <h4>This means that the government wants a way they can be able to pass all the obstacles from a mobile phone (usually passwords). Example is in a game where there are difficult questions that will take time to answer while the owner can pass right through the questions and win easily. </h4>
+
+    <h3>2) What are the main legal and ethical reasons for letting the government have a back door?</h3>
+
+    <h4>The main legal reasons for letting the government have a back door might include criminal behavior, a threat to the country, or a supported suspicion.</h4>
+
+    <h3>3) What are the main legal and ethical reasons against letting the government have a back door?</h3>
+
+    <h4>Some reasons against why the government shouldn't be allowed a back door is because they can easily exploit the priviledge and use it to their advantage.</h4>
+
+    <h3>4) Do you think Apple should abide by the Court’s decision and unlock the mobile phone in the San Bernardino case? Explain.</h3>
+
+    <h4>I think Apple should unlock the mobile phone in the San Bernardino case in secret because the understanding of the cause of the event is important to prevent tragadies in the future. However, if made public that Apple has agreed to unlock the mobile phone a controversy about whether or not the privacy of other phones can be viewed would be argued. And that would complicate people's beliefs and trust in Apple's products.</h4>
+
+    <style>
+h1{ 
+    color: white ;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
+}
+
+h2{
+    color: white;
+    
+}
+
+h3{
+    color: gray;
+    text-shadow: 2px 2px white;
+}
+
+
+h4{
+    color: black;
+    text-shadow: .5px .5px white;
+
+}
+
+body {
+  background-image: url('https://wallpapercave.com/wp/wp3398828.jpg');
+  background-size: cover;
+}
+</style>
+
+
+    <script src="script.js"></script>
+  </body>
+
+
+</html> 
