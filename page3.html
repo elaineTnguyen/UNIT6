@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>portfolio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <h1>Unit 4 - Animation, Simulation, & Modeling</h1>
+
+    <h2> 4.2 - Lights Off Tutorial </h2>
+
+    <h3>1) This app presents a new type of event which you haven't encountered before. What is that new event? How often is it triggered?</h3>
+
+    <h4>The new type of event we're introduced to is the imagesprite, which can be placed onto a canvas. It is triggered depending on the timer and the blocks that make up the different intervals. </h4>
+
+    <h3>2) Consider the apps you've developed so far. Can you list all the different events your apps have responded to? What other events do you think an app can respond to? Explore some of the components in App Inventor and see what event handlers they have.</h3>
+
+    <h4>Events I've used in previous apps include the common "if then" event, "when do" event, math function events, and the logic events. Other events that are not already included in app inventor could possibly be a feature that allows facial recognition, such as filters. </h4>
+
+    <h3>3) What are the advantages of writing procedures in programming? Use the procedures you wrote for this app as examples in your response.</h3>
+
+    <h4>Advantages of writing procedures is the simplified version makes it easier to handle and to work with. Procedures we wrote for this app includes the reset button which the app to trigger various action, also taking up less space. </h4>
+
+    <h2>4.3 - Lights Off Projects</h2>
+
+    <h3>1) Describe the purpose of each enhancement that you added to your app. Give brief descriptions of the enhancements and provide screenshots of important blocks and describe how you used them to solve certain programming problems. Include these descriptions in your write-up, below.</h3>
+
+    <h4>Each enhancement was done using an algorithm. Enhancements including the score and miss labels, restart/reset button, the timer, and the highscore which is stored in tinydb. Below is an example of an important block we used through out the code. This logic block is important because it's a part of the "if" block and without this block the app's timer would not be able to function which would trigger a butterfly effect with the whole app.</h4>
+
+    <a href="https://ibb.co/P6cHwVp"><img src="https://i.ibb.co/MCc0MJT/Screen-Shot-2019-11-17-at-8-18-33-PM.png" alt="Screen-Shot-2019-11-17-at-8-18-33-PM" border="0"></a>
+
+    <h3>2) When the user touches an ImageSprite, both the Canvas.Touched and ImageSprite.Touched events are triggered. This is important for more complex games. For instance, suppose there are "good" and "bad" sprites in your game. If you hit one, you earn a point. If you hit the other, you lose two points. If you hit the Canvas and don't hit the ImageSprite, you lose 1 point. How would you code this?</h3>
+
+    <h4>This would be coded based on the "when "" .Touched do" block, which is also combined with "if then" block and various other blocks such as logic, math functions and variables. Below is an example. </h4>
+
+    <a href="https://ibb.co/syjFxtX"><img src="https://i.ibb.co/yW08vVx/Screen-Shot-2019-11-17-at-8-58-46-PM.png" alt="Screen-Shot-2019-11-17-at-8-58-46-PM" border="0"></a>
+
+    <h3>3) How do you speed up the movement of the ImageSprite? What is the fastest it could move?</h3>
+
+    <h4>You speed up the movement of the image sprite by using the "set ImageSprite .Interval to" block. The fastest speed you can make the image sprite move is the speed of 1000 seconds. </h4>
+
+    <h2>4.4 - Logo, Part 1</h2>
+
+    <h3>1) Include a screenshot of your app's face drawing, and the code involved, showing the use of a loop and a procedure. You can take a screenshot on most Android devices by pressing the power button and the volume down button and the same time and then emailing the photo from the gallery to yourself, or uploading the image to Google Drive. To practice for the Create task, describe how two of the algorithms (procedures that you wrote) in the code combine to form a bigger algorithm (the drawFace procedure).</h3>
+
+    <h4>The two algoritms that were combined includes the math function blocks and the call blocks create a drawing. Procedures that were combined includes the "call pen up", "call pen down" and other blocks such as the "call foward", and the "call turn" block to successfully draw a face. </h4>
+
+    <a href="https://ibb.co/2WyxjLp"><img src="https://i.ibb.co/8N0qjRQ/Screen-Shot-2019-11-17-at-9-30-27-PM.png" alt="Screen-Shot-2019-11-17-at-9-30-27-PM" border="0"></a>
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/0sNt1FY/loho.png" alt="loho" border="0"></a>
+
+    <h3>2) Can you draw a triangle with this set of Logo commands? Discuss how or why not.</h3>
+
+    <h4> You are not able to draw a triangle with these set of commands because the pen is not able to turn at a different angle besides 90 degrees. </h4>
+
+    <h3>3) Discuss: If you were designing the Logo language, how would you change some of our basic commands so that it would be easy to draw a triangle and easier to draw other shapes -- i.e., what should the basic commands do that would make drawing easier.</h3>
+
+    <h4> Some basic commands I would change is the ability to turn at certain angles to be able to draw triangles. And possibly change the color or width of the lines.</h4>
+
+    <h3>4) What weaknesses do you find in using the procedures (the abstractions) we gave you -- forward, turn -- for drawing simple shapes? How would you change the definitions of these procedures to make it easier to draw shapes? Give a specific example that illustrates how a more powerful set of procedures would improve things.</h3>
+
+    <h4>Some weaknesses I found using the procedure includes the incapabilty to draw other shapes besides a square or rectangle. I would change the procedures to allow the drawing to have different curves, therefore creating various unique shapes. If there was a powerful set of procedures there would be no limit, you could possibly draw landscapes and include colored curved lines.</h4>
+
+
+    <h2>4.5 - Coin Flip Simulation Tutorial </h2>
+
+    <h3>1) Write an if/else statement to express the following real life situation. Mary likes ice cream and always chooses chocolate unless there is no chocolate in which case she chooses strawberry. But if there’s no strawberry either then she settles for vanilla, which, for some reason, is always available.</h3>
+
+    <h4>If chocolate, Then chocolate. Else strawberry, If else vanilla.</h4>
+
+    <h3>2) We didn’t need it for the loop in this lesson, but the number element in the For each number loop is a local variable whose value changes automatically on each iteration of the loop. For example, in this loop number would start at 1 and then go to 2, 3 and 4. And this value can be used in the body of the loop, as shown in this example. Given that, trace through this loop and figure out what value global sum would have when the loop finishes.</h3>
+
+    <h4> When the loop finishes you would be left with the sum of 10 because all of the loops added together would result in 10 loops</h4>
+
+    <h3>3) App Inventor’s random-integer block is an abstract model of randomness -- i.e., an abstraction of real randomness such as flipping a real coin. What would you say about the random-integer block if you ran the coin flipping simulation 10,000 times and the result was that it came up heads 55% of the time?</h3>
+
+    <h4>If a coin was flipped 10,000 times by a random-integer block and the results came out to be 55% heads; the randomness would be true because it is random based on two variables so getting around half of each is reasonably random. </h4>
+
+    <h2>4.6 - Coin Flip Experiment </h2>
+
+    <h3>1) (POGIL) According to your results, does App Inventor's PRNG provide a good model of randomness?</h3>
+
+    <h4>Yes I think that the PRNG provide a good model of randomness because random could be possibly anything, some things can just be harder to achieve based on randomness.</h4>
+
+    <h3>2) (POGIL) A friend claims that flipping a coin 100 times and finding that it comes up heads only 45% of the time shows that the coin is biased. How should you reply?</h3>
+
+    <h4>I would reply with; the coin can not possibly be biased because the randomness can make anything occur. It is even possible to have heads 100%, however is very unlikely and would have a low chance of occuring.</h4>
+
+    <h3>3) Because we are using a coin flip app, this experiment really tests only that App Inventor's random integer block generates a 1 around half the time. Is this a sufficient test for App Inventor's PRNG? What other experiments might you do to increase your confidence in App Inventor’s PRNG?</h3>
+
+    <h4>Other ways we can test the sufficiency of App Inventor's PRNG is conducting experiments like rolling die or spinning a wheel.</h4>
+
+    <h2>4.7 - Pseudo Random Numbers </h2>
+
+    <h3>1) Consider the following Dilbert cartoon? Would it be possible for a PRNG to spit out 6 NINEs in a row?</h3>
+
+    <h4>Yes it would be possible for a PRNG to spit out 6 nines in a row because randomness could be anything, the chances of getting 6 nines is not impossible but can be very unlikely. </h4>
+
+    <h3>2) Are slot machines fair? Why or why not?</h3>
+
+    <h4>Slot machines are fair in my opinion because it's true to the "random" rules, people know what they get into when they gamble and how the chances of winning could be very low because it is random.   </h4>
+
+    <h3>3) Is it possible to devise a method that would allow you to win consistently on a slot machine?</h3>
+
+    <h4>Yes if you set the random asset to only one variable the machine will consistently output the same number.</h4>
+
+    <h2>4.8 - Real World Models </h2>
+
+    <h3>1) What are the main differences between Bill Nye's solar system model and the Second Life model?</h3>
+
+    <h4>The difference between Bill Nye's solar system model and the Second Life Model is that Bill Nye's solar system is demonstrated in an unrealistic way, compared to the Second Life model which shows the full model in a more realistic way. </h4>
+
+    <h3>2) (POGIL) What would happen if there were lots more wolves than there are bunnies? Would the wolves live forever? Record your hypothesis, prediction and experiment results.</h3>
+
+    <h4> If there were more wolves than bunnies, the wolves would not live forever because they woukld lose their food supply. My hypothesis was correct based on the wolf and bunny simulation.</h4>
+
+    <h3>3) (POGIL) This model chose to include certain features and exclude other features. For example, this simulation only includes rabbits, wolves, and grass but there are other predators of rabbits and other food sources for rabbits. Why do you think the creators focused on these data elements and not others? How might this introduce bias (concentration on or interest in a particular area) into the simulation?</h3>
+
+    <h4>The creator focused on these data elements because it emphasizes the balance between predator and prey. The creator also focuses on these two specific types because the simulation is easier to demonstrate and process. This might introduce bias because then there would be other factors affecting the simulation. The creators stuck with Wolves, Rabbits and Grass to keep the simulation simple which also leads to a bias because then we wouldn’t know truly if the rabbits or the wolves would’ve taken over.</h4>
+
+    <h2>4.9 - Abstraction: Inside the CPU </h2>
+
+    <h3>1) Which generation of the 4-bit simulators above is the most abstract? Why? </h3>
+
+    <h4>The second generation is the most abstract because it includes more names that symbolizes the data.</h4>
+
+    <h3>2) Explain the purpose or function of the RAM and the CPU. </h3>
+
+    <h4>The purpose of a RAM is to store quick data however can be lost easily if the computer is shut off. The purpose of the CPU is to calculate most if not all of the problems on in the computer, so I would like to believe that it is the brains of the computer. </h4>
+
+    <h3>3) Describe in your own words the difference between the fetch and execute steps. </h3>
+
+    <h4>The fetch step is actually fetching the data or storing information while the execute step is actually imputting the instruction into the computer.</h4>
+
+    <h3>4) Summarize the differences between assembly language and machine language programming.</h3>
+
+    <h4>The assembly language is inputted by humans then the machine language programming is when machines would read through the assembly language and converts it to machine language. </h4>
+
+    <h2>4.10 Impacts of CS: Privacy</h2>
+
+    <h3>1) Is it possible to identify someone, perhaps a patient, knowing just the gender, birth date, and zip code? Why or why not?</h3>
+
+    <h4>Yes it is possible to identify a person knowing just the gender, birthdate, and zip code, because information is stored in the cloud and can be easily accessed. However, it can be hard to hone down on a specific person but it can't be impossible.</h4>
+
+    <h3>2) Are electronic documents like paper documents? Write 2-3 sentences comparing and contrasting them.</h3>
+
+    <h4>Electronic documents are not like paper documents because paper documents can be easily discarded, however electronic documents can be shared and forever be in the cloud. An example is a letter compared to a post. A letter can be burned and all trace of it will dissapear while the electronic version is forever going to be tracable or atleast small fragments of the post can be found.</h4>
+
+    <h3>3) Earlier in the course, you built the Map Tour app. In the final version, what kind of data is collected from the user? Does the user know the data is being collected? Can they opt out of providing data and still use the app?</h3>
+
+    <h4>The data that is being connected from the user includes the users marked location (bookmarks). However it is only an option if they mark a location of their own, it would be stored in the tinydb.</h4>
+
+    <h3>4) Is the Privacy Act effective? Explain why or why not.</h3>
+
+    <h4>The Privacy Act is effective in certain parts of the world such as Europe. </h4>
+
+    <h3>5) Are you willing to trade some of your privacy for the convenience of having a computer or a company recommend products to you? Why or why not? Under what circumstances?</h3>
+
+    <h4>Yes, I am willing to trade some of the my privacy for companies to reccomend products because I think it's an easy and affordable way to shop, as long as my privacy is not leaked and if I were to unsubscribe the company all my info would be erased as well. </h4>
+
+    <h3>6) How do we leave digital "footprints and fingerprints?" Do you think this is important for everyone to know? Why or why not?</h3>
+
+    <h4> We leave digital footprints and fingerprints by going on websites and leaving cookies behind. I think it is crucial for people to be informed that bits of theit information is being stored on the site because their privacy could be sensitive.</h4>
+
+    <h3>7) How have social media platforms such as Twitter, Instagram, Snapchat, etc. affected our privacy?</h3>
+
+    <h4>Social media platforms have affected our privacy because it has taken so much information from users and used that data to produce more user interface that would satisfy users.</h4>
+
+    <h3>8) In this course, you are building apps that collect data from users, the device, and its sensors. What responsibilities do we have as app developers for the data we collect?</h3>
+
+    <h4> We have the responsiblity of keeping that information private and protecting it from possible data collecting theives.</h4>
+
+    <h3>9) Search the web for a recent news story that deals with privacy. LINK to the article and then write a paragraph summarizing the article, including any beneficial or harmful impacts on privacy. </h3>
+
+    <a href="https://www.nytimes.com/2019/11/15/opinion/privacy-facebook-pew-survey.html">"We Hate Data Collection. That Doesn’t Mean We Can Stop It".</a>
+
+    <h4>A brief summary of "We Hate Data Collection. That Doesn’t Mean We Can Stop It." includes information about people who feel as if their information is up for grabs. The article also talks about the various feelings towards this privacy sheme. According to the survey, Americans in 2019 feel adrift and powerless about living under the glare of digital surveillance. While, two-thirds of Americans believe that surveillance is an inevitable consequence of modern existence. </h4>
+
+    <style>
+h1{ 
+    color: white ;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
+}
+
+h2{
+    color: white;
+    
+}
+
+h3{
+    color: gray;
+    text-shadow: 2px 2px white;
+}
+
+
+h4{
+    color: black;
+    text-shadow: .5px .5px white;
+
+}
+
+body {
+  background-image: url('https://wallpapercave.com/wp/wp3398828.jpg');
+  background-size: cover;
+}
+</style>
+
+
+    <script src="script.js"></script>
+  </body>
+
+
+</html>
